@@ -111,6 +111,11 @@
             border-top: 1px solid var(--border-color);
         }
 
+        .tech-stack strong {
+            display: block;
+            margin-bottom: 15px;
+        }
+
         .tech-badge {
             background-color: #e9ecef;
             color: #495057;
@@ -124,53 +129,51 @@
     </style>
 </head>
 <body>
-
-<div class="container">
-    <header>
-        <h1>Xaveong's Portfolio</h1>
-        <p>자동화 시스템과 데이터 가공 프로젝트를 소개합니다.</p>
-    </header>
-
-    <main>
-        <!-- Daily AI Mailer 프로젝트 카드 -->
-        <article class="project-card">
-            <span class="badge">Active Project</span>
-            <h2 class="project-title">📅 Daily AI Mailer</h2>
-            <p class="project-description">
-                GitHub Actions와 Gemini 대형 언어 모델(LLM)을 결합하여 개인 맞춤형 콘텐츠를 생성하고 매일 아침 자동으로 발송하는 스마트 메일링 시스템입니다. 외부 API 연동부터 스케줄링 기반 자동화까지 서버리스(Serverless) 환경에서 안정적으로 구동됩니다.
-            </p>
-
-            <h3>주요 기능 (Key Features)</h3>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h4>📰 맞춤형 테크 뉴스 브리핑</h4>
-                    <p>구글 뉴스 RSS 피드에서 지정한 키워드(AI 에이전트 등)의 최신 테크 트렌드를 실시간 수집하고 요약합니다.</p>
+    <div class="container">
+        <header>
+            <h1>Xaveong's Portfolio</h1>
+            <p>자동화 시스템과 데이터 가공 프로젝트를 소개합니다.</p>
+        </header>
+        
+        <main>
+            <!-- Daily AI Mailer 프로젝트 카드 -->
+            <article class="project-card">
+                <span class="badge">Active Project</span>
+                <h2 class="project-title">📅 Daily AI Mailer</h2>
+                <p class="project-description">
+                    GitHub Actions와 Gemini 대형 언어 모델(LLM)을 결합하여 개인 맞춤형 콘텐츠를 생성하고 매일 아침 자동으로 발송하는 스마트 메일링 시스템입니다. 외부 API 연동부터 스케줄링 기반 자동화까지 서버리스(Serverless) 환경에서 안정적으로 구동됩니다.
+                </p>
+                
+                <h3>주요 기능 (Key Features)</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>📰 맞춤형 테크 뉴스 브리핑</h4>
+                        <p>구글 뉴스 RSS 피드에서 지정한 키워드(AI 에이전트 등)의 최신 테크 트렌드를 실시간 수집하고 요약합니다.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🗣️ 체계적인 영어 회화 독학</h4>
+                        <p>시작일 기준 날짜를 자동 계산하여 진도에 맞춘 '오늘의 표현 3가지, 예문, 원어민 뉘앙스, 영작 퀴즈'를 제공합니다.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>🤖 Gemini 가공 & HTML 서식</h4>
+                        <p>Gemini 2.5 모델을 활용해 가독성 높은 폰트, 표, 인용구가 적용된 세련된 HTML 이메일 본문을 동적으로 빌드합니다.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>⏰ 무비용 완벽 자동화</h4>
+                        <p>별도의 개인 서버 없이 GitHub Actions의 Cron 스케줄러를 통해 매일 정해진 아침 시간에 메일을 발송합니다.</p>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <h4>🗣️ 체계적인 영어 회화 독학</h4>
-                    <p>시작일 기준 날짜를 자동 계산하여 진도에 맞춘 '오늘의 표현 3가지, 예문, 원어민 뉘앙스, 영작 퀴즈'를 제공합니다.</p>
+                
+                <div class="tech-stack">
+                    <strong>🛠️ 사용 기술 및 도구:</strong>
+                    <span class="tech-badge">Python 3.10</span>
+                    <span class="tech-badge">Google Gemini API</span>
+                    <span class="tech-badge">GitHub Actions</span>
+                    <span class="tech-badge">Python smtplib</span>
+                    <span class="tech-badge">HTML/CSS Email Template</span>
                 </div>
-                <div class="feature-item">
-                    <h4>🤖 Gemini 가공 & HTML 서식</h4>
-                    <p>Gemini 2.5 모델을 활용해 가독성 높은 폰트, 표, 인용구가 적용된 세련된 HTML 이메일 본문을 동적으로 빌드합니다.</p>
-                </div>
-                <div class="feature-item">
-                    <h4>⏰ 무비용 완벽 자동화</h4>
-                    <p>별도의 개인 서버 없이 GitHub Actions의 Cron 스케줄러를 통해 매일 정해진 아침 시간에 메일을 발송합니다.</p>
-                </div>
-            </div>
-
-            <div class="tech-stack">
-                <strong>🛠️ 사용 기술 및 도구:</strong><br><br>
-                <span class="tech-badge">Python 3.10</span>
-                <span class="tech-badge">Google Gemini API</span>
-                <span class="tech-badge">GitHub Actions</span>
-                <span class="tech-badge">Python smtplib</span>
-                <span class="tech-badge">HTML/CSS Email Template</span>
-            </div>
-        </article>
-    </main>
-</div>
-
+            </article>
+        </main>
+    </div>
 </body>
 </html>
